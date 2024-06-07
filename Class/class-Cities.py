@@ -3,3 +3,5 @@ class Cities:
         self.ID = ID
         self.name = name
         self.country_code = country_code
+        self.country = country
+        self.Places = []

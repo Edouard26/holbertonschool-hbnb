@@ -9,10 +9,10 @@ class Users:
         self.age = age
 
 class Customers(Users):
-    def __init__(self, username, ID, password, email, first_name, last_name, age, customer_id):
+    def __init__(self, username, ID, password, email, first_name, last_name, age, customer_id, review):
         super().__init__(username, ID, password, email, first_name, last_name, age)
         self.customer_id = customer_id
-
+        self.review = review
 
 class Owners(Users):
     def __init__(self, username, ID, password, email, first_name, last_name, age, owner_id):

@@ -5,3 +5,6 @@ class Reviews:
         self.user_id = user_id
         self.rating = rating
         self.comment = comment
+
+    def Write_review(self, customer)
+    customer.log(f"Review ID {self.ID} started.")

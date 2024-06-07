@@ -4,12 +4,17 @@ class Places:
         self.gps = gps
         self.nb_of_rooms = nb_of_rooms
         self.max_guest = max_guest
+        self.Cities = City
+        self.amenities = []
 
     def details(self):
         print(f"Area: {self.area} m²")
         print(f"GPS coordinates: {self.gps}")
         print(f"Number of rooms: {self.nb_of_rooms}")
         print(f"Number max of guests: {self.max_guest}")
+
+    def add_amenity(self, amenity):
+        self.amenities.append(amenity)
 
 class Appartment(Places):
     def __init__(self, area, gps, nb_of_rooms, max_guest):
