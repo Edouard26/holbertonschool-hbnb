@@ -5,3 +5,4 @@ class Cities:
         self.country_code = country_code
         self.country = country
         self.Places = []
+        country.cities.append(self)

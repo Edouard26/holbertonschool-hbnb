@@ -6,6 +6,8 @@ class Places:
         self.max_guest = max_guest
         self.Cities = City
         self.amenities = []
+        city.places.append(self)
+
 
     def details(self):
         print(f"Area: {self.area} m²")
