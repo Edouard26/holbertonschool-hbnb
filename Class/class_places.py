@@ -1,4 +1,4 @@
-class Places:
+class places:
     def __init__(self, area, gps, nb_of_rooms, max_guest):
         self.area = area
         self.gps = gps
@@ -18,26 +18,26 @@ class Places:
     def add_amenity(self, amenity):
         self.amenities.append(amenity)
 
-class Appartment(Places):
+class Appartment(places):
     def __init__(self, area, gps, nb_of_rooms, max_guest):
         super().__init__(area, gps, nb_of_rooms, max_guest)
     
     def details(self):
-        print("Type: Appartment")
+        print("Type: appartment")
         super().details()
 
-class House(Places):
+class House(places):
     def __init__(self, area, gps, nb_of_rooms, max_guest):
         super().__init__(area, gps, nb_of_rooms, max_guest)
 
     def details(self):
-        print("Type: House")
+        print("Type: house")
         super().details()
 
-class Room(Places):
+class Room(places):
     def __init__(self, area, gps, max_guest):
         super().__init__(area, gps, 1, max_guest)
 
     def details(self):
-        print("Type: Room")
+        print("Type: room")
         super().details()

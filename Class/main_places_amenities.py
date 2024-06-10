@@ -1,9 +1,9 @@
-from class-Amenities import Amenities
-from class-Places import Places
+from class_amenities import amenities
+from class_places import places
 
 # Création des instances de Amenities
-wifi = Amenities(1, "Wi-Fi")
-pool = Amenities(2, "Swimming Pool")
+wifi = amenities(1, "Wi-Fi")
+pool = amenities(2, "Swimming Pool")
 
 # Ajout des commodités au lieu
 wifi.add_amenity(wifi)

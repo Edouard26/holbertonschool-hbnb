@@ -1,7 +1,7 @@
 
-from class-Reviews import Reviews
-from class-Users import Customers
-from class-Places import Places
+from class_reviews import reviews
+from class_users import customers
+from class_places import places
 
 # Création des instances
 john = Customer("john_doe", 101, "securepassword", "john@example.com", "John", "Doe", 30, "CUST123")

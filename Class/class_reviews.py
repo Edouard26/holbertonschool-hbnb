@@ -1,4 +1,4 @@
-class Reviews:
+class reviews:
     def __init__(self, ID, place, user_id, rating, comment):
         self.ID = ID
         self.place = place
@@ -8,5 +8,5 @@ class Reviews:
         place.reviews.append(self)
         user.reviews.append(self)
 
-    def Write_review(self, customer)
+    def write_review(self, customer)
     customer.log(f"Review ID {self.ID} started.")
