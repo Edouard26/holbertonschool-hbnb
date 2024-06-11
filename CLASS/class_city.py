@@ -1,4 +1,4 @@
-class cities:
+class city:
     def __init__(self, ID, name, country_code):
         self.ID = ID
         self.name = name

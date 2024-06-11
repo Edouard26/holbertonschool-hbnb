@@ -7,7 +7,10 @@ class Place:
         self.cities = cities
         self.amenities = []
         cities.add_place(self)
-
+    
+    def add_review(self, review):
+        self.reviews.append(review)
+        
     def details(self):
         print(f"Area: {self.area} m²")
         print(f"GPS coordinates: {self.gps}")
