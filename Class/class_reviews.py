@@ -1,5 +1,6 @@
 class reviews:
-    def __init__(self, ID, place, user_id, rating, comment):
+    def __init__(self, basemodel, ID, place, user_id, rating, comment):
+        self.basemodel
         self.ID = ID
         self.place = place
         self.user_id = user_id

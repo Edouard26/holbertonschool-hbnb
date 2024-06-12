@@ -1,5 +1,6 @@
 class places:
-    def __init__(self, area, gps, nb_of_rooms, max_guest, amenities, city):
+    def __init__(self, basemodel, area, gps, nb_of_rooms, max_guest, amenities, city):
+        self.basemodel
         self.area = area
         self.gps = gps
         self.nb_of_rooms = nb_of_rooms

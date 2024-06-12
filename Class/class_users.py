@@ -1,5 +1,6 @@
 class users:
-    def __init__(self, username, ID, password, email, first_name, last_name, age):
+    def __init__(self, basemodel, username, ID, password, email, first_name, last_name, age):
+        self.basemodel
         self.username = username
         self.ID = ID
         self.password = password

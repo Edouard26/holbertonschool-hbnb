@@ -1,5 +1,6 @@
 class amenities:
-    def __init__(self, ID, name, appartment, house, room):
+    def __init__(self, basemodel, ID, name, appartment, house, room):
+        self.basemodel
         self.ID = ID
         self.name = name
         self.appartment
