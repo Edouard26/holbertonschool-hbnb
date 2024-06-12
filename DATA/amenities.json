@@ -1,0 +1,12 @@
+{
+    "amenities": [
+        {
+            "ID": "1",
+            "name": "WiFi"
+        },
+        {
+            "ID": "2",
+            "name": "Pool"
+        }
+    ]
+}

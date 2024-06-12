@@ -1,0 +1,16 @@
+{
+    "city": [
+        {
+            "ID": "1",
+            "name": "Paris",
+            "country_code": "FR",
+            "places": []
+        },
+        {
+            "ID": "2",
+            "name": "TUNISIE",
+            "country_code": "TNS",
+            "places": []
+        }
+    ]
+}

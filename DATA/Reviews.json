@@ -1,0 +1,19 @@
+{
+    "reviews": [
+      {
+        "ID": "1",
+        "place": "Place 1",
+        "user": "User 1",
+        "rating": 4.5,
+        "comment": "Incroyaaaable!"
+      },
+      {
+        "ID": "2",
+        "place": "Place 2",
+        "user": "User 2",
+        "rating": 3.8,
+        "comment": "j'aime bien l'experience."
+      }
+    ]
+  }
+  

@@ -1,9 +1,8 @@
 from flask import Flask, request, jsonify
-from class_country import Country  # Assurez-vous d'importer correctement votre classe
+from class_country import Country  
 
 app = Flask(__name__)
 
-# Dictionnaire pour stocker les pays
 countries = {}
 
 @app.route('/countries', methods=['POST'])
