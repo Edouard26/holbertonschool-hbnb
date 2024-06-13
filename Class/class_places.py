@@ -1,15 +1,11 @@
 class places(basemodel):
-    def __init__(self, basemodel, area, gps, nb_of_rooms, max_guest, amenities, city):
-        super().__init__(id, name, created_at, updated_at)
-        self.basemodel
-        self.area = area
-        self.gps = gps
-        self.nb_of_rooms = nb_of_rooms
-        self.max_guest = max_guest
-        self.city = city
-        city.places.append(self)
-        self.amenities = amenities
-
+    def __init__(self, basemodel, area, gps, nb_of_rooms, max_guest):
+        super().__init__(uuid4, name, created_at, updated_at)
+    self.basemodel
+    self.area = area
+    self.gps = gps
+    self.nb_of_rooms = nb_of_rooms
+    self.max_guest = max_guest
 
     def details(self):
         print(f"Area: {self.area} m²")
@@ -21,7 +17,7 @@ class places(basemodel):
         self.amenities.append(amenity)
 
 class apartment(places):
-    def __init__(self, area, gps, nb_of_rooms, max_guest, amenities, city):
+    def __init__(self, places, area, gps, nb_of_rooms, max_guest):
         super().__init__(area, gps, nb_of_rooms, max_guest, amenities, city)
     
     def details(self):
@@ -29,7 +25,7 @@ class apartment(places):
         super().details()
 
 class house(places):
-    def __init__(self, area, gps, nb_of_rooms, max_guest, amenities, city):
+    def __init__(self, area, gps, nb_of_rooms, max_guest, amenities, ):
         super().__init__(area, gps, nb_of_rooms, max_guest, amenities, city)
 
     def details(self):
