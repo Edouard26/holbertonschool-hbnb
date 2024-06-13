@@ -4,6 +4,9 @@ import uuid
 from .IPersistenceManager import IPersistenceManager
 
 class DataManager(IPersistenceManager):
+    cloud_database = None
+    cloud_entity_class = None
+    cloud_primary_key = None
 
     def __init__(self):
         for attr_name in ['cloud_database', 'cloud_entity_class', 'cloud_primary_key']:
@@ -110,4 +113,5 @@ class DataManager(IPersistenceManager):
     @property
     def cloud_PATH(self):
         return f"data/{self.cloud_database}.json"
+
 

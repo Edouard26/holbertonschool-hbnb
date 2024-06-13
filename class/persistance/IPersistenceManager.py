@@ -1,18 +1,18 @@
-  from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod
 
-   class IPersistenceManager(ABC):
-       @abstractmethod
-       def save(self, entity):
+class IPersistenceManager(ABC):
+        @abstractmethod
+        def save(self, entity):
            pass
 
-       @abstractmethod
-       def get(self, entity_id, entity_type):
+        @abstractmethod
+        def get(self, entity_id, entity_type):
            pass
 
-       @abstractmethod
-       def update(self, entity):
+        @abstractmethod
+        def update(self, entity):
            pass
 
-       @abstractmethod
-       def delete(self, entity_id, entity_type):
+        @abstractmethod
+        def delete(self, entity_id, entity_type):
            pass

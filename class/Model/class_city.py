@@ -5,11 +5,11 @@ from .ModelBase import ModelBase
 class city(ModelBase):
 
     def __init__(self, name, created_at, updated_at, country_code, ID)
-    self.name = name
-    self.country_code = country_code
-    self.id = ID
-    self.created_at = created_at
-    self.updated_at = updated_at
+        self.name = name
+        self.country_code = country_code
+        self.id = ID
+        self.created_at = created_at
+        self.updated_at = updated_at
 
     def tojson(self):
         return {
