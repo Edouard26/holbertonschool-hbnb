@@ -1,5 +1,6 @@
-class reviews:
+class reviews(basemodel):
     def __init__(self, basemodel, ID, place, user_id, rating, comment):
+        super().__init__(id, name, created_at, updated_at)
         self.basemodel
         self.ID = ID
         self.place = place

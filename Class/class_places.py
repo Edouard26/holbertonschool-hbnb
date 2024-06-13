@@ -1,5 +1,6 @@
-class places:
+class places(basemodel):
     def __init__(self, basemodel, area, gps, nb_of_rooms, max_guest, amenities, city):
+        super().__init__(id, name, created_at, updated_at)
         self.basemodel
         self.area = area
         self.gps = gps

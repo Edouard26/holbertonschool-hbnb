@@ -1,5 +1,6 @@
-class city:
-    def __init__(self, basemodel, ID, name, country_code, country, places):
+class city(basemodel):
+    def __init__(self, basemodel, country_code, country, places):
+        super().__init__(id, name, created_at, updated_at)
         self.basemodel
         self.ID = ID
         self.name = name
