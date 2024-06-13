@@ -11,9 +11,3 @@ class basemodel:
 
     created_at: datetime = datetime.now(timezone)
     updated_at: datetime = datetime.now(timezone)
-
-         def save(self):
-            print(f"Saving {self.name} with ID {self.id}")
-
-        def delete(self):
-            print(f"Deleting {self.name} with ID {self.id}")
