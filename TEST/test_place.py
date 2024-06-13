@@ -1,7 +1,7 @@
 import unittest
 from datetime import datetime
 import time
-from class_places import Place, Apartment, House, Room
+from class_place import Place, Apartment, House, Room
 
 class City:
     def __init__(self, name, country_code):
@@ -81,4 +81,3 @@ class TestRoom(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-

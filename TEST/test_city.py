@@ -1,29 +1,17 @@
 import unittest
-from class_city import city
+from datetime import datetime
+from class_cityOK import city
 
 class TestCity(unittest.TestCase):
-    def test_add_place(self):
-        # Créer une ville
-        city_instance = city("1", "Paris", "FR")  # Utiliser la classe City pour créer une instance de la ville
-
-        # Vérifier que la ville est initialement vide
-        self.assertEqual(len(city_instance.places), 0)
-
-        # Ajouter un lieu à la ville
-        city_instance.add_place({"name": "Eiffel Tower", "type": "Landmark"})
-
-        # Vérifier que le lieu a été ajouté avec succès
-        self.assertEqual(len(city_instance.places), 1)
-        self.assertEqual(city_instance.places[0]["name"], "Eiffel Tower")
-        self.assertEqual(city_instance.places[0]["type"], "Landmark")
-
-        # Ajouter un deuxième lieu à la ville
-        city_instance.add_place({"name": "Louvre Museum", "type": "Museum"})
-
-        # Vérifier que le deuxième lieu a été ajouté avec succès
-        self.assertEqual(len(city_instance.places), 2)
-        self.assertEqual(city_instance.places[1]["name"], "Louvre Museum")
-        self.assertEqual(city_instance.places[1]["type"], "Museum")
+    def test_city_creation(self):
+        created_at = datetime.now()
+        updated_at = datetime.now()
+        paris = city("Paris", "FR", created_at, updated_at)
+        self.assertEqual(paris.name, "Paris")
+        self.assertEqual(paris.country_code, "FR")
+        self.assertEqual(paris.created_at, created_at)
+        self.assertEqual(paris.updated_at, updated_at)
 
 if __name__ == '__main__':
     unittest.main()
+

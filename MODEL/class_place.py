@@ -48,4 +48,3 @@ class Room(Place):
     def details(self):
         print("Type: Room")
         super().details()
-
