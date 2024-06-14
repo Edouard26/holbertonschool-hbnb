@@ -3,7 +3,7 @@ import unittest
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from Class.users import User
+from Class.user import User
 
 class TestUser(unittest.TestCase):
     def setUp(self):
