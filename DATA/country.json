@@ -1,12 +1,15 @@
-{
-    "country": [
-        {
-            "name": "France",
-            "country_code": "FR"
-        },
-        {
-            "name": "TUNISIE",
-            "country_code": "TNS"
-        }
-    ]
-}
+[
+    {
+    "id": "United States",
+    "created_at": "2023-01-01T00:00:00",
+    "updated_at": "2023-01-01T00:00:00",
+    "country_code": "USA"
+    },
+
+    {
+    "id": "France",
+    "created_at": "2023-01-02T00:00:00",
+    "updated_at": "2023-01-02T00:00:00",
+    "country_code": "FR"
+    }
+]

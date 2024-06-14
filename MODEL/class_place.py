@@ -1,50 +1,26 @@
-from datetime import datetime
+from base_model import basemodel
 
-class Place:
-    def __init__(self, area, gps, nb_of_rooms, max_guest, city):
-        self.area = area
-        self.gps = gps
-        self.nb_of_rooms = nb_of_rooms
-        self.max_guest = max_guest
-        self.city = city
-        self.amenities = []
-        self.created_at = datetime.now()
-        self.updated_at = datetime.now()
-        city.add_place(self)
+class Place(basemodel):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.area = kwargs.get('area', 0)
+        self.gps = kwargs.get('gps', "")
+        self.nb_of_rooms = kwargs.get('nb_of_rooms', 0)
+        self.max_guest = kwargs.get('max_guest', 0)
 
-    def update_place(self, area=None, gps=None, nb_of_rooms=None, max_guest=None, city=None):
-        if area is not None:
-            self.area = area
-        if gps is not None:
-            self.gps = gps
-        if nb_of_rooms is not None:
-            self.nb_of_rooms = nb_of_rooms
-        if max_guest is not None:
-            self.max_guest = max_guest
-        if city is not None:
-            self.city = city
-        self.updated_at = datetime.now()
+    def to_dict(self):
+        place_dict = super().to_dict()
+        place_dict.update({
+            'area': self.area,
+            'gps': self.gps,
+            'nb_of_rooms': self.nb_of_rooms,
+            'max_guest': self.max_guest
+        })
+        return place_dict
 
-class Apartment(Place):
-    def __init__(self, area, gps, nb_of_rooms, max_guest, city):
-        super().__init__(area, gps, nb_of_rooms, max_guest, city)
 
-    def details(self):
-        print("Type: Apartment")
-        super().details()
-
-class House(Place):
-    def __init__(self, area, gps, nb_of_rooms, max_guest, city):
-        super().__init__(area, gps, nb_of_rooms, max_guest, city)
-
-    def details(self):
-        print("Type: House")
-        super().details()
-
-class Room(Place):
-    def __init__(self, area, gps, max_guest, city):
-        super().__init__(area, gps, 1, max_guest, city)
-
-    def details(self):
-        print("Type: Room")
-        super().details()
+if __name__ == "__main__":
+    place = Place(area=100, gps="40.7128,-74.0060", nb_of_rooms=3, max_guest=5)
+    print(place.to_dict())
+    place.save()
+    print(place.to_dict())
