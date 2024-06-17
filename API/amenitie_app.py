@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify, abort
 from amenitie_data_manager import AmenitieDataManager
-from Model.Class.amenitie import Amenitie
+from Model.Class.amenitie import Amenitie # type: ignore
 
 app = Flask(__name__)
 amenitie_data_manager = AmenitieDataManager()
