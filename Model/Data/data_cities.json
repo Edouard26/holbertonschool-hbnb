@@ -1,0 +1,12 @@
+{
+    "id": "New-York",
+    "created_at": "2023-01-01T00:00:00",
+    "updated_at": "2023-01-01T00:00:00",
+    "city_code": "NYC"
+},
+{
+    "id": "Paris",
+    "created_at": "2023-01-02T00:00:00",
+    "updated_at": "2023-01-02T00:00:00",
+    "city_code": "PAR"
+}
